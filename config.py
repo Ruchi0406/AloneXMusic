@@ -18,7 +18,7 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "veenamusic_bot")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "VEENA MUSIC")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "Veena_ki_vaani")
+ASSUSERNAME = getenv("ASSUSERNAME" , "Veena_vaani")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -46,8 +46,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/jee_study_room")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/offtopic_community")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
