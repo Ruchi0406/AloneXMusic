@@ -27,7 +27,7 @@ async def _whisper(_, inline_query):
             InlineQueryResultArticle(
                 title=" Whisper",
                 description=f"@VeenaMusic_bot [USERNAME | ID] [TEXT]",
-                input_message_content=InputTextMessageContent(f" Usage:\n\n@VeenaMusic_bot (Target Username or ID) (Your Message).\n\n**Example:**\n@VeenaMusic_bot @username Aditya is My Boyfriend"),
+                input_message_content=InputTextMessageContent(f"**Usage:**\n\n@VeenaMusic_bot (Target Username or ID) (Your Message).\n\n**Example:**\n@VeenaMusic_bot @username Aditya is My Boyfriend"),
                 thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
                 reply_markup=switch_btn
             )
@@ -80,5 +80,4 @@ async def whispes_cb(_, query):
 
     if user_id not in [from_user, to_user, 6661176722]:
         try:
-            await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
-        except Unauthorized:
+            await _.send```
