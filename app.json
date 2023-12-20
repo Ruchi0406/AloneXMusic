@@ -39,12 +39,12 @@
       },
       "STRING_SESSION": {
         "description": "A Pyrogram v2 String Session from @AloneXStringBot on Telegram.",
-        "value": "BQCZmE1WCelSqxQN3vT2Jj5Skt8s62bISgcomN9vo6tSRcAuZaZCLDyee9hcTaYKOv-6zHIlHK7xdPh_9JbSvrUWgU9SST_USzymmnOucTvHHDQlpCWM5_AN8YCZdsPG7YM_bVJ57F8fApheU9TnDyhzsPmQ5ziq9o3dNbUf9E-tEZ7l2aJh3xhWTXPbv_bydcqtKrrLxbDhS4QLIBq4LMT9lTSWFIqBGntbecz8and_NMVNRiLtPPQ4UNB2j13t1a4Hg-11LzoH7eIialEnPy4KobG2E6bXks346TUVPEY_onpr-lVZ4PmoLpcJYZf_srCs0GwEAlFUQbhztuW0mleqAAAAAXnha8AA",
+        "value": "BQFuT0wAO2D2-K4JdZSzE55qfg9I_4mwvMiTC4zQ_SHB4uorTA9Hd-54GHX4H2k8arNgaXBwWBDi6aIRdO3XYlyI8NbGVx_yINurpSnidWYijR2LWIOdtplQTV-ZL9ar-Vf6qALztfKXP2GpnE9naZr0AEc_oVFVLAEaBgZzEO1EdwobnbIAdNxPt3vA2-fdhue_AkNugxFrH6Bp_fuLKlWIatpIaMhPwXg06fqy4izSTgDCkJDvpQDNCFQM2IsWUY_jJd1KHDVpNETejjzchyveaEEA-7zGdTTP2JOTSrsDpUxKoiByi1mJyVeJ6rWAwv-qWJpb914TmEvNJuDHeqxG5pX9tAAAAAF54WvAAA",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
-        "value": "f12f932d-d3c1-44ff-a735-a2c5ff0c0eb6",
+        "value": "95860c65-7195-41db-bc9c-5b9d46779f2d",
         "required": false
       },
       "HEROKU_APP_NAME": {
