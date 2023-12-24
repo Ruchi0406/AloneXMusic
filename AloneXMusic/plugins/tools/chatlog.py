@@ -56,7 +56,8 @@ async def _greet(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"🌷 𝐇ᴇʟʟᴏ 𝐃ᴇᴀʀ {message.from_user.mention} 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ 🥳\n\n"
+                f"🌷 𝐇ᴇʟʟᴏ 𝐃ᴇᴀʀ {message.from_user.mention} 💘\n\n"
+                f"➥ 𝐈 𝐀ᴍ ˹ 𝐕ᴇᴇɴᴀ ✘ 𝐌ᴜꜱɪᴄ ˼ ♪ 𝐏ʀᴇꜱᴇɴᴛ 𝐇ᴇʀᴇ 𝐓ᴏ 𝐖ᴇʟᴄᴏᴍᴇ 𝐘ᴏᴜ 𝐈ɴ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ {message.chat.title} \n\n"
                 f"📌 𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ: {message.chat.title}\n"
                 f"🔐 𝐂ʜᴀᴛ 𝐔.𝐍: @{message.chat.username}\n"
                 f"💖 𝐔ʀ 𝐈d: {member.id}\n"
