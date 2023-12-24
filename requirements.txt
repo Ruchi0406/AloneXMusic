@@ -27,7 +27,7 @@ spotipy
 tgcrypto
 telegraph
 unidecode
-yt-dlp
+yt-dlp==2023.12.22.232735.dev0
 youtube-search
 youtube-search-python
 gtts
