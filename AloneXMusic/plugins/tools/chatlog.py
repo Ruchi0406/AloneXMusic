@@ -89,4 +89,4 @@ async def _greet(_, message):
     welcome_message_id = await send_welcome_message(chat.id, user_mention, chat_title, username, user_id, member_username, count)
 
     # Delete old user's welcome message
-    await delete_welcome_message(chat.id, message.message_id)
+    await delete_welcome_message(chat.id, message)
