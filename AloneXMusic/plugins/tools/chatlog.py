@@ -25,9 +25,9 @@ async def send_welcome_message(chat_id, user_mention, chat_title, username, user
     ]))
     return message.message_id
 
-async def delete_welcome_message(chat_id, message_id):
+async def delete_welcome_message(chat_id, message):
     try:
-        await app.delete_messages(chat_id, message_id)
+        await app.delete_messages(chat_id, message.message_id)
     except Exception as e:
         print(f"Error deleting welcome message: {e}")
 
@@ -42,10 +42,10 @@ async def _greet(_, message):
     count = await app.get_chat_members_count(chat.id)
 
     # Send welcome message
-    welcome_message_id = await send_welcome_message(chat.id, user_mention, chat_title, username, user_id, member_username, count)
+    welcome_message = await send_welcome_message(chat.id, user_mention, chat_title, username, user_id, member_username, count)
 
     # Delete old user's welcome message
     try:
-        await delete_welcome_message(chat.id, message.message_id)
+        await delete_welcome_message(chat.id, message)
     except Exception as e:
         print(f"Error deleting old welcome message: {e}")
