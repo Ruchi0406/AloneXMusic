@@ -67,3 +67,26 @@ async def _greet(_, message):
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"🥺 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ 🥺", url=f"https://t.me/{app.username}?startgroup=true")]
          ]))
+return message.message_id
+
+async def delete_welcome_message(chat_id, message_id):
+    try:
+        await app.delete_messages(chat_id, message_id)
+    except Exception as e:
+        print(f"Error deleting welcome message: {e}")
+
+@app.on_message(filters.new_chat_members, group=3)
+async def _greet(_, message):    
+    chat = message.chat
+    user_mention = message.from_user.mention
+    chat_title = message.chat.title
+    username = message.chat.username
+    user_id = message.from_user.id
+    member_username = message.from_user.username
+    count = await app.get_chat_members_count(chat.id)
+
+    # Send welcome message
+    welcome_message_id = await send_welcome_message(chat.id, user_mention, chat_title, username, user_id, member_username, count)
+
+    # Delete old user's welcome message
+    await delete_welcome_message(chat.id, message.message_id)
